@@ -1,2 +1,21 @@
 server:
   port: 8015
+
+spring:
+  h2: #h2db 콘솔을 생성하기 위함
+    console:
+      enabled: true
+      path: /h2-console
+
+  datasource: #h2db 연결하기 위함
+    url: jdbc:h2:./db_dev;MODE=MySQL
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: update # 데이터베이스 스키마 자동 업데이트를 위함
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect # H2 데이터베이스를 사용하기 위함
