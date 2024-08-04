@@ -36,7 +36,8 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher' //해당 라이브러리가 테스트 시에만 사용됨을 의미한다.
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' //스프링 부트에서 타임리프 템플릿을 쉽게 사용할 수 있도록 한다.
     implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect' //공통 레이아웃 정의, 재사용 편의성 제공한다.
-    implementation 'org.springframework.boot:spring-boot-starter-validation'//빈 게시글을 등록할 수 없게 하는 등 데이터 유효성 검사를 간편하게 할 수 있도록 도와준다.
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+//빈 게시글을 등록할 수 없게 하는 등 데이터 유효성 검사를 간편하게 할 수 있도록 도와준다.
     implementation 'org.springframework.boot:spring-boot-starter-security'//스프링 시큐리티 사용하기 위한 라이브러리이다.
     implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'//스프링 시큐리티와 타임리프 템플릿 엔진을 함께 사용할 때 필요한 기능이다.
 }
